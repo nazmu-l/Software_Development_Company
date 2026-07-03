@@ -31,16 +31,20 @@ body {
     font-family: "Fredoka", sans-serif;
 }
 
-/* Header Top Section */
+
+
+/* ================ Header Top Section ================== */
 
 /*------- Top Header ------- */
 
 .top-header {
     background: linear-gradient(135deg, #A78BFA, #1E1B4B);
     padding: 12px 0;
-    /* color: #fff; */
+    color: #fff;
     font-size: 15px;
+
 }
+
 
 .top-contact {
     display: flex;
@@ -56,11 +60,12 @@ body {
 
 .top-contact a:hover {
     color: #FDE047;
-    transform: translateY(-4px);
+    transform: translateX(-4px);
+    transition: all .3s ease;
 }
 
 .top-contact i {
-    color: #ffd43b;
+    color: #FDE047;
     margin-right: 8px;
 }
 
@@ -70,13 +75,16 @@ body {
     background: rgba(255, 255, 255, .4);
 }
 
+
 .top-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
 
+
 }
+
 
 .social-icons {
     display: flex;
@@ -84,22 +92,23 @@ body {
 }
 
 .social-icons a {
+
     width: 38px;
     height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: #fff;
-    text-decoration: none;
     background: rgba(255, 255, 255, .15);
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50px;
     transition: .3s;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .social-icons a:hover {
     background: #fff;
-    color: #0d6efd;
+    color: #ffc107;
     transform: translateY(-4px);
 }
 
@@ -107,7 +116,7 @@ body {
     background: #ffc107;
     color: #222;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 30px;
     font-weight: 600;
     transition: .3s;
@@ -115,16 +124,14 @@ body {
 
 .login-btn:hover {
     background: #A78BFA;
-    box-shadow: 0px 0px 10px #ddd;
+    box-shadow: 0px 0px 5px #ddd;
     color: #ffffff;
-    transform: translateY(-4px);
+    transform: translateX(-4px);
 }
 
-/*==============================
-        Responsive
-===============================*/
+/* ------------ Responsive ----------- */
 
-@media(max-width:991px) {
+/* @media(max-width:991px) {
 
     .top-contact {
         justify-content: center;
@@ -161,7 +168,7 @@ body {
         text-align: center;
     }
 
-}
+} */
 
 
 /*==============================
@@ -172,115 +179,15 @@ body {
     transition: 0.3s;
 }
 
-.navbar-brand h4 {
-    font-size: 26px;
-    letter-spacing: .5px;
-}
 
-.navbar-brand small {
-    font-size: 13px;
-}
 
 .navbar-nav .nav-link {
-    color: #222;
+    color: #1E1B4B;
     font-weight: 600;
     margin: 0 10px;
     position: relative;
     transition: .3s;
-}
 
-.navbar-nav .nav-link::after {
-
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background: #0d6efd;
-    transition: .3s;
-
-}
-
-.navbar-nav .nav-link:hover::after,
-.navbar-nav .nav-link.active::after {
-
-    width: 100%;
-
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-
-    color: #0d6efd;
-
-}
-
-.btn-primary {
-
-    font-weight: 600;
-    padding: 10px 24px;
-
-}
-
-.navbar-toggler:focus {
-
-    box-shadow: none;
-
-}
-
-/*==============================
-        Responsive
-==============================*/
-
-@media (max-width:991px) {
-
-    .navbar-nav {
-
-        text-align: center;
-        margin: 25px 0;
-
-    }
-
-    .navbar-nav .nav-link {
-
-        margin: 12px 0;
-
-    }
-
-    .btn-primary {
-
-        display: block;
-        width: 100%;
-        text-align: center;
-
-    }
-
-}
-
-/*==============================
-        NAVBAR
-==============================*/
-
-.navbar {
-    transition: 0.3s;
-}
-
-.navbar-brand h4 {
-    font-size: 26px;
-    letter-spacing: .5px;
-}
-
-.navbar-brand small {
-    font-size: 13px;
-}
-
-.navbar-nav .nav-link {
-    color: #222;
-    font-weight: 600;
-    margin: 0 10px;
-    position: relative;
-    transition: .3s;
 }
 
 .navbar-nav .nav-link::after {
@@ -310,10 +217,16 @@ body {
 
 }
 
-.btn-primary {
+.btn-primary2 {
 
     font-weight: 600;
+    font-size: 18px;
     padding: 10px 24px;
+    /* background: #000; */
+    font-style: italic;
+    text-decoration: none;
+    color: #1E1B4B;
+
 
 }
 
@@ -352,6 +265,8 @@ body {
 
 }
 
+
+/*------------- Banner Section -------------- */
 
 .hero-banner .carousel-item {
     height: 90vh;
@@ -449,5 +364,147 @@ body {
         width: 100%;
         margin-bottom: 12px;
     }
+
+}
+
+
+/*==============================
+    Technology Stack
+==============================*/
+
+.tech-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+    padding: 30px 20px;
+    transition: .3s;
+    height: 100%;
+}
+
+.tech-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+
+/*==============================
+        FOOTER
+==============================*/
+
+.footer-section {
+
+    background: #111827;
+    border-top: 15px solid #ffd500;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.logo-img {
+    width: 200px;
+    border-radius: 5px;
+    background: #fffefe;
+}
+.loginicon{
+    color: #010004;
+
+}
+
+.footer-section h3,
+.footer-section h5 {
+
+    color: #fff;
+
+}
+
+.footer-section p {
+
+    color: #cbd5e1;
+
+}
+
+.footer-section ul {
+
+    padding-left: 0;
+
+}
+
+.footer-section ul li a {
+
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: .3s;
+
+
+}
+
+.footer-section ul li a:hover {
+
+    color: #FDE047;
+    padding-left: 6px;
+    font-style: italic;
+
+}
+
+.social-icon {
+
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    background: #1E1B4B;
+    transition: .3s;
+    box-shadow: 0px 0px 2px #ddd;
+
+}
+
+.social-icon:hover {
+
+    background: #FDE047;
+    color: #1E1B4B;
+    transform: translateY(-4px);
+    transition: all .3s ease;
+
+}
+
+.Newsletter-btn {
+    background-color: #FDE047;
+    color: rgb(11, 7, 7);
+    padding: 9px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Newsletter-btn:hover {
+    background-color: #e0c01d;
+    transition: .3s;
+}
+
+
+
+.form-control {
+
+    border: none;
+
+}
+
+.form-control:focus {
+    box-shadow: none;
+
+}
+
+.btn-primary {
+
+    font-weight: 600;
 
 }
