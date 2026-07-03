@@ -266,7 +266,7 @@ body {
 }
 
 
-/*------------- Banner Section -------------- */
+/*-- Banner Section -- */
 
 .hero-banner .carousel-item {
     height: 90vh;
@@ -393,6 +393,21 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*==============================
         FOOTER
 ==============================*/
@@ -410,7 +425,8 @@ body {
     border-radius: 5px;
     background: #fffefe;
 }
-.loginicon{
+
+.loginicon {
     color: #010004;
 
 }
@@ -508,3 +524,90 @@ body {
     font-weight: 600;
 
 }
+
+
+/*--------------- About Page --------------*/
+/*=========================
+    Breadcrumb Section
+=========================*/
+
+.breadcrumb-section {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+
+/*------------ Service Accordion -----------*/
+
+
+/* .accordion-item{
+    border:1px solid #dee2e6;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+.accordion-button{
+    font-weight:600;
+    padding:18px 20px;
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+}
+
+.accordion-button:not(.collapsed){
+    background:#0d6efd;
+    color:#fff;
+}
+
+.accordion-button i{
+    font-size:20px;
+}
+
+.accordion-body{
+    line-height:1.8;
+    color:#6c757d;
+}
+
+.accordion-body ul{
+    padding-left:18px;
+}
+
+.accordion-body li{
+    margin-bottom:8px;
+}
+
+.service-details img{
+    border-radius:12px;
+}
+
+.service-details h2{
+    font-weight:700;
+}
+
+.service-details p{
+    line-height:1.8;
+}
+
+.service-details .list-group-item{
+    border:0;
+    padding-left:0;
+    background:transparent;
+}
+
+.service-details .btn{
+    padding:10px 25px;
+} */
+
+
+
+/* dsgfdsfgsd */
