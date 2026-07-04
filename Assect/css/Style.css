@@ -294,6 +294,39 @@ body {
     transform: translateY(50%);
     text-align: left;
     max-width: 700px;
+
+}
+
+.hero-banner .btn-banner {
+    background-color: #FFC107;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.hero-banner .btn-banner:hover {
+    background-color: #FFC107;
+    color: black;
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+.hero-banner .btn-banner2 {
+    background-color: #ffc10700;
+    border: 1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-banner .btn-banner2:hover {
+    /* background-color: #FFC107; */
+    color: #ffffff;
+    transform: translateY(-5px);
+    transition: .3s;
+    border: 1px solid #ffffff;
+
 }
 
 .hero-banner h1 {
@@ -368,28 +401,36 @@ body {
 }
 
 
-/*==============================
-    Technology Stack
-==============================*/
+/* Services Section */
+.bg-span-services{
+    background-color: #1E1B4B;
+}
 
-.tech-card {
-    background: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 15px;
-    padding: 30px 20px;
+.service-icon-img{
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border-radius: 20px;
+    /* border: 1px solid #ddd; */
+}
+
+.card-body .btn-service{
+    border:1px solid #ffbf00;
+    color: #010004;
+    font-weight: 500;
+}
+.card-body .btn-service:hover{
+    border:1px solid #1E1B4B;
+    color: #000000;
+    font-weight: 500;
+    transform: translateY(-4px);
     transition: .3s;
-    height: 100%;
 }
 
-.tech-card img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-}
-
-.tech-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    
 }
 
 
@@ -407,10 +448,7 @@ body {
 
 
 
-
-/*==============================
-        FOOTER
-==============================*/
+/*----- FOOTER ------*/
 
 .footer-section {
 
@@ -526,88 +564,3 @@ body {
 }
 
 
-/*--------------- About Page --------------*/
-/*=========================
-    Breadcrumb Section
-=========================*/
-
-.breadcrumb-section {
-    background: #f8f9fa;
-    padding: 60px 0;
-}
-
-.breadcrumb-item a {
-    text-decoration: none;
-}
-
-.breadcrumb-item.active {
-    color: #6c757d;
-}
-
-
-/*------------ Service Accordion -----------*/
-
-
-/* .accordion-item{
-    border:1px solid #dee2e6;
-    border-radius:10px;
-    overflow:hidden;
-    margin-bottom:15px;
-}
-
-.accordion-button{
-    font-weight:600;
-    padding:18px 20px;
-}
-
-.accordion-button:focus{
-    box-shadow:none;
-}
-
-.accordion-button:not(.collapsed){
-    background:#0d6efd;
-    color:#fff;
-}
-
-.accordion-button i{
-    font-size:20px;
-}
-
-.accordion-body{
-    line-height:1.8;
-    color:#6c757d;
-}
-
-.accordion-body ul{
-    padding-left:18px;
-}
-
-.accordion-body li{
-    margin-bottom:8px;
-}
-
-.service-details img{
-    border-radius:12px;
-}
-
-.service-details h2{
-    font-weight:700;
-}
-
-.service-details p{
-    line-height:1.8;
-}
-
-.service-details .list-group-item{
-    border:0;
-    padding-left:0;
-    background:transparent;
-}
-
-.service-details .btn{
-    padding:10px 25px;
-} */
-
-
-
-/* dsgfdsfgsd */
